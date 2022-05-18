@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,500;0,700;1,100;1,700&display=swap');
+
+body {
+    margin:0;
+    padding:0;
+    overflow: hidden;
+    border:none;
+}
+
+.toplvl-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+}
+
+.left-head {
+    position:relative;
+    height:100vh;
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("img/thumbs.png");
+    background-repeat: no-repeat;
+    background-color: #e3d8a9;
+    background-blend-mode: multiply;
+    background-position: center;
+}
+
+.right-buttons {
+    position: relative;
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e3d8a9;
+}
+
+#jerry2002 {
+    font-family: "Roboto";
+}
