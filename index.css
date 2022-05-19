@@ -5,6 +5,8 @@ body {
     padding:0;
     overflow: hidden;
     border:none;
+    color: white;
+    font-family: 'Roboto', "Helvetica", "Arial", sans-serif;
 }
 
 .toplvl-flex-row {
@@ -16,6 +18,17 @@ body {
     position: relative;
 }
 
+.toplvl-flex-row.donatequarantine {
+    align-content: center;
+    height: 100vh;
+    position:static;
+}
+
+.donategif {
+    width: 440px;
+    height: 324px;
+}
+
 .left-head {
     position:relative;
     height:100vh;
@@ -25,6 +38,7 @@ body {
     justify-content: center;
     align-items: center;
     background-image: url("img/thumbs.png");
+    background-size: cover;
     background-repeat: no-repeat;
     background-color: #e3d8a9;
     background-blend-mode: multiply;
@@ -42,5 +56,181 @@ body {
 }
 
 #jerry2002 {
-    font-family: "Roboto";
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+    font-size: 50px;
+}
+
+#jerry-bold {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.flex-colm {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    border: none;
+    border-radius: 12px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    padding: 10px;
+    padding-right: 45px;
+    padding-left: 45px;
+    background: #e3d8a9;
+    box-shadow:  2px 2px 20px #c1b890;
+    font-weight: bolder;
+    font-size: 40px;
+    align-content: flex-start;
+    display: flex;
+    cursor: pointer;
+    transition: all 0.1s ease-in 0s;
+}
+
+button:hover {
+    background-color: limegreen;
+}
+
+button::after {
+    content: "\00a0\00a0>";
+    float: right;
+    margin-left: auto;
+    font-weight: 100;
+}
+
+/*
+################
+#    ISSUES    #
+################
+*/
+
+.top-navbar {
+    position: sticky;
+    top: 0px;
+    background-color: #e3d8a9;
+    height: 50px;
+    box-shadow: 0px 1px 12px rgb(87, 87, 87);
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.pg-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    background-color: #e7e1c6;
+    margin-bottom: 0px;
+}
+
+.iss-page-title {
+    font-size: 70px;
+    font-weight: 700;
+}
+
+.iss-flexrowctr {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.iss-sect-headingimg {
+    margin-left: 25px;
+}
+
+.iss-sect-centerer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.iss-sect-leading {
+    font-size: 50px;
+    font-style: italic;
+    font-weight: 200;
+}
+
+.jerry-will {
+    font-size: 40px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.iss-sect-with-header {
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+p {
+    word-wrap: break-word;
+}
+
+.iss-sect-with-header.court {
+    background-image: url("img/court.jpg");
+    color: white;
+}
+
+.iss-sect-with-header.mentalhealth {
+    background-image: url("img/pie.jpeg");
+    color: white;
+}
+
+.iss-sect-with-header.environment {
+    background-image: url("img/trees.jpg");
+    color: white;
+}
+
+.iss-sect-with-header.family {
+    background-image: url("img/family.jpg");
+    color: white;
+}
+
+.abt-family-flex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.abt-img {
+    width: 200px;
+    height: 280px;
+    
+}
+
+.abt-name {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.rightfloat {
+    float: right;
+    vertical-align: left;
+}
+
+.iss-sect-head {
+    margin-left: 25px;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.needswrap {
+    text-align: center;
+}
+
+.iss-sect {
+    margin-top: 0;
 }
